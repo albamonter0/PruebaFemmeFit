@@ -1,0 +1,1998 @@
+/* =======================
+   Fuentes
+======================= */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =======================
+   Reset básico
+======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =======================
+   Body
+======================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #444;
+    background-color: #fff7f9; /* rosita muy clarito */
+    line-height: 1.6;
+}
+
+/* =======================
+   Encabezados
+======================= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* =======================
+   Links
+======================= */
+a {
+    color: #d38ca0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #a0586f;
+}
+
+/* =======================
+   Botones
+======================= */
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #f7cbdc;
+    border: none;
+    color: #333;
+}
+
+.btn-primary:hover {
+    background-color: #eaa6c1;
+    color: #fff;
+}
+
+/* =======================
+   Navbar
+======================= */
+.navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.navbar .nav-link.active {
+    color: #d38ca0;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+    color: #444;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background-color: #f7cbdc;
+    color: #fff;
+}
+
+/* =======================
+   Carousel
+======================= */
+.carousel-inner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    text-align: center;
+    background: rgba(255, 247, 249, 0.6); /* capa ligera rosita */
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.carousel-caption h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* =======================
+   Secciones
+======================= */
+.container-fluid {
+    padding: 5rem 2rem;
+}
+
+/* Nuestro Espacio */
+.bg-light {
+    background-color: #fff0f3 !important; /* rosita muy clarito */
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.bg-light h4 {
+    color: #d38ca0;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.bg-light h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.bg-light p {
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+/* =======================
+   Servicios
+======================= */
+.section-title h4 {
+    color: #d38ca0;
+    letter-spacing: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.section-title h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.service-icon {
+    font-size: 2rem;
+    color: #d38ca0;
+    margin-right: 0.5rem;
+}
+
+/* =======================
+   Testimonios
+======================= */
+.testimonial-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.testimonial-item img {
+    border-radius: 50%;
+}
+
+/* =======================
+   Footer
+======================= */
+.footer {
+    background-color: #f7cbdc;
+    color: #333;
+    padding: 3rem 2rem;
+}
+
+.footer a {
+    color: #333;
+}
+
+.footer a:hover {
+    color: #a0586f;
+}
+
+/* =======================
+   Formularios
+======================= */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    border-color: #d38ca0;
+    box-shadow: none;
+}
+
+.input-group .btn {
+    border-radius: 8px;
+}
+
+/* =======================
+   Media Queries
+======================= */
+@media (max-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+    }
+}
+/* Botones y links del navbar */
+.navbar .nav-link, .dropdown-item {
+    border-radius: 20px; /* bordes suaves y redondeados */
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover, .dropdown-item:hover {
+    background-color: #f7cbdc; /* rosita muy clarito */
+    color: #fff;
+}
+/* Navbar minimalista */
+.navbar {
+    background-color: #fff0f5; /* Fondo rosa clarito */
+    padding: 1rem 2rem;
+}
+
+.navbar .navbar-nav {
+    margin-left: auto; /* Empuja los links a la derecha */
+    align-items: center;
+}
+
+.navbar .nav-link {
+    color: #555; /* Gris oscuro para links */
+    font-weight: 500;
+    margin-left: 1rem;
+    border-radius: 25px; /* Botones redondeados */
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #ffcce6; /* Rosa clarito al pasar el ratón */
+    color: #000;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* título izquierda, menú derecha */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #FFF5F7; /* rosa muy clarito */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem; /* grande */
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #555;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px; /* botones redondeados */
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #FADADD; /* rosa clarito hover */
+    color: #333;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFF5F7;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    min-width: 150px;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #555;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #FADADD;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    display: block;
+}
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption p {
+    color: #ffffff; /* blanco */
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3); /* sombra suave para mejor lectura */
+}
+/* Fuentes */
+.carousel-caption h1 {
+    font-family: 'Playfair Display', serif;
+}
+.carousel-caption h2,
+.carousel-caption h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Colores */
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: #FF66B2; /* fucsia suave */
+}
+
+/* Fondo transparente más ligero */
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Ajustes tipográficos */
+.carousel-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.carousel-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.carousel-text {/* Carrusel - fondo degradado detrás del texto */
+.carousel-caption {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(100, 100, 100, 0.3));
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: #ffffff; /* Letras blancas */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Opcional: resalta más las letras */
+}
+
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Flechas del carrusel más visibles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 102, 178, 0.8); /* fucsia suave */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+/* Carrusel - fondo degradado detrás del texto */
+.carousel-caption {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(100, 100, 100, 0.3));
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: #ffffff; /* Letras blancas */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Opcional: resalta más las letras */
+}
+.carousel-caption {
+    max-width: 80%; /* ocupa más ancho de la imagen */
+    left: 50%;       /* centra horizontalmente */
+    transform: translateX(-50%);
+    padding: 20px 30px; /* espacio alrededor del texto */
+}
+
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    line-height: 1.2;   /* separación entre líneas */
+    color: #ffffff;     /* letras blancas */
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ajusta al ancho que quieras */
+    max-width: 1000px; /* Opcional: para que no se pase demasiado */
+    text-align: center;
+}
+
+.galeria-espacio img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.descripcion-foto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+}
+.titulo-foto {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #E69AB0; /* Rosita clarito */
+    font-weight: 600;
+}
+
+.descripcion-foto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #555555;
+}
+.intro-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; /* puedes ajustar */
+    color: #555; /* gris oscuro suave */
+    max-width: 800px; /* para que no se haga muy ancho en pantallas grandes */
+    text-align: center; /* centra el texto dentro del contenedor */
+    margin: 0 auto; /* centra el texto */
+    line-height: 1.6; /* para que respire y sea fácil de leer */
+}
+.intro-container {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: flex-start; /* arriba de la sección */
+    padding-top: 50px; /* ajusta la distancia desde arriba de la página */
+    padding-bottom: 30px; /* opcional, separación con las fotos *
+
+
+}
+/* INTRO TEXTO */
+.services-intro-container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.services-intro-text {
+    max-width: 900px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* CARDS DE SERVICIOS */
+.service-card {
+    background: #f5efe6; /* beige suave */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.service-card {
+    background: #eeeeee; /* beige más visible */
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s ease;
+    height: 100%;
+    border: 2px solid #e5d6c7; /* borde sutil pero marcado */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* muy suave */
+}
+  
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+}
+
+/* Imagen */
+.service-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Título */
+.service-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Descripción */
+.service-description {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN PRECIO */
+.service-price-btn {
+    background-color: #ff2c95; /* fucsia */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.service-price-btn:hover {
+    opacity: 0.85;
+}
+.service-card {
+    background-color: #f2f2f2; /* gris clarito */
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.services-hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services-hero-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.services-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background: rgba(200, 200, 200, 0.4); /* gris clarito semi-transparente */
+    padding: 30px 40px;
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+.services-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.services-hero-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.team-card {
+    background-color: #FDF7F9; /* fondo muy clarito rosa/blanco */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.team-img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 250px;
+}
+
+.team-name {
+    font-family: 'Playfair Display', serif;
+    color: #d63384; /* rosa fucsia */
+    margin-bottom: 5px;
+
+}
+
+.team-classes {
+    font-family: 'Poppins', sans-serif;
+    color: #555555;
+}
+.team-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.team-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  flex: 1;
+}
+
+.team-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.team-card {
+  flex: 0 0 250px; /* ancho fijo de cada tarjeta */
+  background-color: #f2f1f3; /* gris clarito */
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.team-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.team-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Botones de flechas */
+.carousel-btn {
+  background-color: rgba(255, 192, 203, 0.8); /* rosa clarito */
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+}
+
+.prev-btn {
+  left: -25px;
+}
+
+.next-btn {
+  right: -25px;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(255, 105, 180, 0.9); /* fucsia más intenso al pasar el mouse */
+}
+/* Fuentes */
+.carousel-caption h1 {
+    font-family: 'Playfair Display', serif;
+}
+.carousel-caption h2,
+.carousel-caption h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Colores */
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: #FF66B2; /* fucsia suave */
+}
+
+/* Fondo transparente más ligero */
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Ajustes tipográficos */
+.carousel-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.carousel-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.carousel-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+/* Carrusel */
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    padding: 20px;
+    border-radius: 10px;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%; /* ancho del fondo gris */
+    text-align: center;
+    background: rgba(128,128,128,0.5); /* gris semitransparente */
+    padding: 20px 30px; /* más espacio arriba y abajo */
+    border-radius: 10px;
+}
+
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: #fff;
+    margin: 0.3rem 0;
+    line-height: 1.3; /* para que no se vea condensado */
+}
+/* Carrusel */
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: #fff;
+    margin: 0.3rem 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.carousel-caption h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.carousel-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.carousel-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.carousel-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* Opciones para los controles de flecha */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 192, 203, 0.8); /* rosa clarito */
+    border-radius: 50%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%; /* ancho del fondo gris */
+    text-align: center;
+    background: rgba(128,128,128,0.5); /* gris semitransparente */
+    padding: 20px 30px; /* más espacio arriba y abajo */
+    border-radius: 10px;
+}
+
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: #fff;
+    margin: 0.3rem 0;
+    line-height: 1.3; /* para que no se vea condensado */
+}
+/* Fuentes */
+.carousel-caption h1 {
+    font-family: 'Playfair Display', serif;
+}
+.carousel-caption h2,
+.carousel-caption h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Colores */
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: #FF66B2; /* fucsia suave */
+}
+
+/* Fondo transparente más ligero */
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Ajustes tipográficos */
+.carousel-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.carousel-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.carousel-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Flechas del carrusel más visibles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 102, 178, 0.8); /* fucsia suave */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: #ffffff; /* Texto blanco */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block; /* Para que el fondo no ocupe toda la línea */
+}
+
+/* Nombres del equipo en negrita */
+.team-card h4 {
+  font-weight: 700;         /* negrita */
+  font-family: 'Playfair Display', serif; /* mantiene la tipografía que usas */
+  letter-spacing: 0.2px;    /* opcional: un pelín de espaciado para mejor lectura */
+}
+.team-intro-box {
+    background-color: #ffffff;        /* Rectángulo blanco */
+    border-radius: 20px;              /* Puntas redondeadas */
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;                 /* Opcional: para que no quede gigante */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #444;
+    text-align: justify;              /* Texto justificado */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);  /* Para darle nivel, sutil */
+}
+/* CONTACT PAGE */
+
+.contact-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #d63384; /* rosa fucsia */
+}
+
+.contact-header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-photo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contact-photo-container img {
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* FORM + INFO WRAPPER */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto 60px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* FORM */
+.contact-form {
+    flex: 1 1 400px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.contact-form h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-text {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-form label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-btn {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #d63384; /* rosa fucsia */
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #b8266e;
+}
+
+/* DETAILS */
+.contact-details {
+    flex: 1 1 350px;
+}
+
+.contact-details h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.contact-details h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* MAPA */
+.contact-map-container {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.contact-map-container iframe {
+    border-radius: 20px;
+}
+/* Caja del mapa dentro de la columna de contacto */
+.map-box {
+    background: #ffffff;           /* fondo blanco */
+    border-radius: 16px;          /* esquinas redondeadas */
+    padding: 18px;
+    margin-top: 20px;             /* separación del horario */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06); /* sombra sutil */
+}
+
+.map-box-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+/* contenedor que asegura que el iframe respete el radio */
+.map-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* iframe dentro del contenedor */
+.map-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 260px; /* altura por defecto */
+    border: 0;
+}
+
+/* responsive: en pantallas pequeñas ajustar altura */
+@media (max-width: 576px) {
+    .map-wrapper iframe {
+        height: 200px;
+    }
+}
+/* Título estilo elegante igual para "Información del estudio" y "Horario" */
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Caja del mapa */
+.map-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px;
+    margin: 25px 0;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.map-box-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* contenedor que mantiene el border-radius en el iframe */
+.map-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 260px;
+    border: 0;
+}
+
+/* responsive */
+@media (max-width: 576px) {
+    .map-wrapper iframe {
+        height: 200px;
+    }
+}
+/* Caja del horario */
+.schedule-box {
+    background: #f7e8ef; /* rosita palo suave */
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-top: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+/* Título igual al de Información del estudio */
+.schedule-box .contact-title {
+    margin-top: 0; /* para que no deje espacio extra dentro de la caja */
+}
+.site-footer {
+    background-color: #fff0f5; /* rosa palo */
+    color: #4a004a; /* fucsia oscuro */
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #d81b60; /* fucsia */
+    margin: 0 0 10px 0;
+}
+
+.footer-subtext {
+    font-size: 16px;
+    color: #a83279; /* rosa palo más oscuro */
+    margin: 0;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: #d81b60; /* íconos fucsia */
+}
+
+.footer-contact a {
+    color: #d81b60;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #a83279;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+.site-footer {
+    background-color: #fff0f5; /* rosa palo */
+    color: #000000; /* todas las letras en negro */
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px 20px;
+    width: 100%; /* ocupa todo el ancho */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #000000; /* logo también en negro */
+    margin: 0 0 10px 0;
+}
+
+.footer-subtext {
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #000000; /* texto negro */
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: #000000; /* íconos en negro */
+}
+
+.footer-contact a {
+    color: #000000; /* enlaces en negro */
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+}
+/* Footer general */
+.femme-footer {
+    background: #f7e8ef; /* rosita palo suave */
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Footer general */
+.femme-footer {
+    background: #f7e8ef; /* rosita palo suave */
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor columnas */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Columnas */
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Logo y eslogan */
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.footer-slogan {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Info con iconos */
+.footer-links p {
+    font-size: 1rem;
+    margin: 6px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links i {
+    color: #d63384; /* fucsia suave */
+    font-size: 1.1rem;
+}
+
+/* Pie inferior */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #e4c9d4;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer-bottom .heart {
+    color: #d63384;
+    font-size: 1rem;
+}
+/* BOTÓN BACK TO TOP PEQUEÑO */
+.back-to-top {
+    width: 38px !important;   /* tamaño más pequeño */
+    height: 38px !important;
+    border-radius: 50% !important;
+    font-size: 16px !important; /* icono más pequeño */
+    background-color: #d98daa !important; /* rosita palo */
+    border: none !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 25px !important;  /* posición más discreta */
+    right: 25px !important;
+
+    transition: all .3s ease;
+}
+
+/* hover suave */
+.back-to-top:hover {
+    background-color: #c67b97 !important;
+    transform: translateY(-3px);
+}
+/* BOTÓN MINI BACK TO TOP */
+.mini-top-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 32px;              /* tamaño mini */
+    height: 32px;
+    background-color: #d98daa;   /* rosita palo */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;          /* icono pequeñito */
+    text-decoration: none;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+/* cuando aparece */
+.mini-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* hover */
+.mini-top-btn:hover {
+    background-color: #c67b97;
+    transform: translateY(-3px);
+}
+.intro-block {
+    padding: 60px 20px;
+    background-color: #fff; /* fondo blanco */
+}
+
+.intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro-block {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.intro-container {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.intro-text {
+    flex: 0 0 65%;
+    min-width: 300px;
+    text-align: justify;
+}
+
+.intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #d81b60;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.intro-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.intro-image {
+    flex: 0 0 35%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: cente
+.intro-block {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.intro-container {
+    display: grid;
+    grid-template-columns: 1fr auto; /* texto ocupa el espacio disponible, imagen solo lo que necesita */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.intro-text {
+    text-align: justify;
+}
+
+.intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #d81b60; /* fucsia */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.intro-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.intro-image img {
+    width: 100%;       /* ocupa todo el ancho de su contenedor */
+    max-width: 350px;  /* limita tamaño máximo real */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .intro-container {
+        grid-template-columns: 1fr 1fr; /* columnas iguales en tablet */
+    }
+
+    .intro-image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-container {
+        grid-template-columns: 1fr; /* columnas apiladas en móvil */
+    }
+
+    .intro-text, .intro-image {
+        text-align: center;
+    }
+
+    .intro-title {
+        font-size: 28px;
+    }
+
+    .intro-image img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+.intro-block {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.intro-text {
+    flex: 1;           /* ocupa todo el espacio disponible */
+    text-align: justify;
+}
+
+.intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #d81b60;
+    margin-bottom: 20px;
+}
+
+.intro-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.intro-image {
+    flex: 0 0 auto;    /* solo ocupa el ancho que necesita */
+    max-width: 350px;  /* la columna nunca será más grande */
+}
+
+.intro-image img {
+    width: 100%;       /* ocupa todo el ancho de su columna */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .intro-container {
+        flex-wrap: wrap; /* deja que las columnas se ajusten */
+    }
+
+    .intro-image {
+        max-width: 100%; /* se adapta al ancho disponible */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .intro-text, .intro-image {
+        flex: 1 1 100%;
+    }
+
+    .intro-image img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .intro-title {
+        font-size: 28px;
+    }
+}
+.intro-block {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.intro-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.intro-text {
+    flex: 1; /* ocupa todo el espacio disponible */
+    text-align: justify;
+}
+
+.intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #d81b60; /* fucsia */
+    margin-bottom: 20px;
+}
+
+.intro-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Columna de imagen como fondo */
+.intro-image {
+    flex: 0 0 35%; /* ocupa el 35% de la fila */
+    min-width: 250px;
+    height: 300px; /* altura fija de la imagen */
+    background-image: url('img/fachada.jpg'); /* ruta de tu foto */
+    background-size: cover; /* cubre toda la columna */
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .intro-container {
+        flex-wrap: wrap;
+    }
+
+    .intro-image {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .intro-image {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .intro-title {
+        font-size: 28px;
+    }
+}
+.text-with-image {
+    padding: 40px 20px;
+    text-align: center; /* centra el texto */
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #d81b60; /* fucsia */
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px; /* limita ancho del texto */
+    margin: 0 auto 30px; /* centra el bloque de texto */
+}
+
+.image-container img {
+    width: 60%;         /* ocupa solo el 60% del ancho de la página */
+    max-width: 500px;   /* tamaño máximo real */
+    height: auto;       /* mantiene proporción */
+    border-radius: 15px; /* bordes redondeados */
+    display: block;
+    margin: 0 auto;     /* centra la imagen */
+}
+.text-with-image {
+    padding: 40px 20px;
+    text-align: center; /* centra el texto */
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #d81b60; /* fucsia */
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px; /* centra el bloque de texto */
+
+}
+.femme-footer {
+    background-color: #fff; /* o el color que quieras */
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* para que en móvil se apilen las columnas */
+    justify-content: center; /* centra las columnas */
+    gap: 40px; /* espacio entre columnas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1 1 250px; /* ancho mínimo y flexible */
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #d81b60; /* fucsia */
+    margin-bottom: 10px;
+}
+
+.footer-slogan {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-links p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-links i {
+    margin-right: 8px;
+    color: #d81b60; /* iconos en fucsia */
+}
+
+/* Línea inferior */
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.footer-bottom .heart {
+    color: #d81b60;
+}
+
+/* Botón "volver arriba" */
+.mini-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d81b60;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    display: none; /* se activa con JS */
+    z-index: 999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+}
+.femme-footer {
+    background-color: #fff; /* o el color que quieras */
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* para que en móvil se apilen las columnas */
+    justify-content: center; /* centra las columnas */
+    gap: 40px; /* espacio entre columnas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1 1 250px; /* ancho mínimo y flexible */
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #d81b60; /* fucsia */
+    margin-bottom: 10px;
+}
+
+.footer-slogan {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-links p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-links i {
+    margin-right: 8px;
+    color: #d81b60; /* iconos en fucsia */
+}
+
+/* Línea inferior */
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.footer-bottom .heart {
+    color: #d81b60;
+}
+
+/* Botón "volver arriba" */
+.mini-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d81b60;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    display: none; /* se activa con JS */
+    z-index: 999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+}.footer-section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section .col-md-4 {
+    text-align: left;
+}
+
+.footer-section {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.femme-footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center; /* CENTRA TODO */
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto; /* CENTRA LA CAJA */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col p, 
+.footer-col h2 {
+    text-align: center; /* evita que en otras páginas se vaya a la izquierda */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+
+

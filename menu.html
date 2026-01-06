@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>FemmeFit Studio - Entrena, crece y brilla</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+   <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="index.html" class="navbar-brand">FemmeFit Studio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link active">Inicio</a>
+            <a href="about.html" class="nav-item nav-link">Nuestro Espacio</a>
+            <a href="service.html" class="nav-item nav-link">Entrenamientos</a>
+            <a href="menu.html" class="nav-item nav-link">Nuestro equipo</a>
+            <a href="contact.html" class="nav-item nav-link">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Nuestro Equipo Start -->
+<div class="container py-5">
+    <h2 class="text-center mb-5">Nuestro Equipo</h2>
+    <div class="team-intro-box">
+    <p>
+        Todos nuestros entrenadores están plenamente cualificados para acompañarte, 
+        guiarte y ofrecerte las herramientas necesarias para que alcances tus metas. 
+        En FemmeFit Studio cuidamos cada detalle para que te sientas segura, motivada 
+        y apoyada en cada sesión.
+    </p>
+</div>
+
+    <div class="team-carousel-wrapper">
+        <button class="carousel-btn prev-btn">&#10094;</button>
+        <div class="team-carousel">
+            <div class="team-card">
+                <img src="img/profe1.jpg" alt="Profesora 1">
+                <h4>María López</h4>
+                <p>Especialista en yoga y pilates, María te acompaña con técnicas adaptadas para ganar fuerza, flexibilidad y bienestar integral. Amable y cercana, hace que cada clase sea un momento de conexión con el cuerpo y la mente.</p>
+            </div>
+            <div class="team-card">
+                <img src="img/profe2.jpg" alt="Profesora 2">
+                <h4>Raúl García</h4>
+                <p>Entrenador funcional, Raúl se centra en mejorar fuerza, coordinación y resistencia a través de ejercicios dinámicos y divertidos. Cada sesión está diseñada para que progreses de forma segura y efectiva.</p>
+            </div>
+            <div class="team-card">
+                <img src="img/profe3.jpg" alt="Profesora 3">
+                <h4>Miguel Torres</h4>
+                <p>Entrenador funcional y experto en planificación para runners, Miguel diseña entrenamientos personalizados para mejorar rendimiento, prevenir lesiones y disfrutar del movimiento.</p>
+            </div>
+            <div class="team-card">
+                <img src="img/profe4.jpg" alt="Profesora 4">
+                <h4>Elena Fernández</h4>
+                <p>Fisioterapeuta y experta en suelo pélvico, Elena guía a embarazadas y a mujeres que acaban de dar a luz con ejercicios seguros y efectivos para recuperar fuerza y confianza en su cuerpo.</p>
+            </div>
+            <div class="team-card">
+                <img src="img/profe5.jpg" alt="Profesora 5">
+                <h4>Sofía Martínez</h4>
+                <p>Preparadora físico especializada en running y planes de entrenamiento personalizados, Sofía acompaña a cada persona a alcanzar sus metas deportivas, combinando técnica, resistencia y motivación constante.</p>
+            </div>
+            <div class="team-card">
+                <img src="img/profe6.jpg" alt="Profesora 6">
+                <h4>Ana Torres</h4>
+                <p>Especialista en entrenamiento funcional y acondicionamiento físico, Ana combina intensidad y técnica para ayudarte a alcanzar tus objetivos, desde mejorar tu movilidad hasta ganar fuerza y energía en el día a día.</p>
+            </div>
+        </div>
+        <button class="carousel-btn next-btn">&#10095;</button>
+    </div>
+</div>
+<!-- Nuestro Equipo End -->
+
+<!-- jQuery, Popper.js y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script>
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+const carousel = document.querySelector(".team-carousel");
+
+nextBtn.addEventListener("click", () => {
+  carousel.scrollBy({ left: 260, behavior: "smooth" });
+});
+
+prevBtn.addEventListener("click", () => {
+  carousel.scrollBy({ left: -260, behavior: "smooth" });
+});
+</script>
+
+</div>
+<footer class="femme-footer">
+    <div class="footer-container">
+        
+        <!-- Columna 1 -->
+        <div class="footer-col">
+            <h2 class="footer-logo">FemmeFit Studio</h2>
+            <p class="footer-slogan">Entrena. Crece. Brilla.</p>
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="footer-col footer-links">
+
+            <p><i class="fas fa-instagram"></i> @femmefitstudio</p>
+            <p><i class="fas fa-phone"></i> +34 699 362 256</p>
+            <p><i class="fas fa-map-marker-alt"></i> Calle Poeta Llorente, La Pobla de Vallbona</p>
+            <p><i class="fas fa-envelope"></i> info@femmefitstudio.com</p>
+
+        </div>
+
+    </div>
+
+    <!-- Línea inferior -->
+    <div class="footer-bottom">
+        <p>© 2025 FemmeFit Studio — Todos los derechos reservados</p>
+        <p>Hecho con <span class="heart">❤</span> por Alba Montero</p>
+    </div>
+</footer>
+
+<a href="#" id="miniTopBtn" class="mini-top-btn">
+    <i class="fa fa-chevron-up"></i>
+</a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
